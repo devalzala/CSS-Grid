@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Grid 6</title>
+        <style>
+            body{
+                color: green;
+                text-align: center;
+            }
+            #content{
+                display: grid;
+                grid-template-columns: 20% 20% 20% 20% 20%;
+                
+                /* grid-template-columns: 1fr 2fr 1fr; */
+                /* grid-template-columns: repeat(9,1fr); */
+                grid-column-gap: 10px;
+                grid-row-gap: 15px;
+                grid-gap: 10px;
+                max-width: 900px;
+                margin: 0 auto;
+                justify-items: left;
+            }
+            #content div{
+                background: aqua;
+                padding: 25px;
+            }
+            #content div:nth-child(even){
+                background: #777;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </body>
+</html>

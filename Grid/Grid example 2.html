@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Grid Example 2</title>
+        <style>
+            #content{
+                text-align: center;
+                color: white;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 10px;
+                max-width: 960px;
+                margin: 0 auto;
+                grid-template-areas:
+                "header header header header"
+                "one one two two"
+                "three four five six"
+                "three seven eight nine"
+                "footer footer footer footer";
+                
+            }
+            #content div, header, footer>*{
+                background: grey;
+                padding: 30px;
+                color: white;
+            }
+            header{
+                grid-area: header;
+                text-align: right;
+            }
+            .one{
+                grid-area: one;
+            }
+            .two{
+                grid-area: two;
+            }
+            .three{
+                grid-area: three;
+            }
+            .four{
+                grid-area: four;
+            }
+            .five{
+                grid-area: five;
+            }
+            .six{
+                grid-area: six;
+            }
+            .seven{
+                grid-area: seven;
+                padding: 15px;
+            }
+            .eight{
+                grid-area: eight;
+                padding: 15px;
+            }
+            .nine{
+                grid-area: nine;
+            }
+            .footer{
+                grid-area: footer;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <div id="content">
+            <header>Item 3 Item 2 Item 1</header>
+            <div class="one">1</div>
+            <div class="two">2</div>
+            <div class="three">3</div>
+            <div class="four">4</div>
+            <div class="five">5</div>
+            <div class="six">6</div>
+            <div class="seven">7</div>
+            <div class="eight">8</div>
+            <div class="nine">9</div>
+            <footer>Footer</footer>
+          </div>
+          
+    </body>
+</html>

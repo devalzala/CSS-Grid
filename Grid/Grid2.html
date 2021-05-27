@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Grid 2</title>
+        <style>
+            body{
+                color: #fff;
+                text-align: center;
+            }
+            #content{
+                display: grid;
+                grid-template-columns: 33.3% 33.3% 33.3%;
+                grid-template-rows: 33.3% 33.3% 33.3%;
+                /* grid-template-columns: 1fr 2fr 1fr; */
+                /* grid-template-columns: repeat(9,1fr); */
+                grid-column-gap: 10px;
+                grid-row-gap: 15px;
+                grid-gap: 10px;
+                max-width: 900px;
+                margin: 0 auto;
+            }
+            #content div{
+                background: #3bbced;
+                padding: 25px;
+            }
+            #content div:nth-child(odd){
+                background: #777;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <div>1</div>
+            <div>2</div>
+            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam magni alias aut laboriosam facilis reprehenderit, ullam corrupti et. Architecto ex vero rerum in perspiciatis perferendis eligendi libero sunt autem tempora.</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+        </div>
+    </body>
+</html>
